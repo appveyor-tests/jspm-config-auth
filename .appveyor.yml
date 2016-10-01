@@ -1,0 +1,15 @@
+version: 1.0.{build}
+os: Visual Studio 2015
+build: off 
+
+#environment:
+#  JSPM_GITHUB_AUTH_TOKEN:
+#    secure: todo
+    
+install:
+- ps: Install-product node 6.2.0
+- node --version
+- npm install jspm -g --depth 0
+- npm install --depth 0
+#- jspm config registries.github.auth %GITHUB_AUTH_TOKEN%
+- jspm install -y
