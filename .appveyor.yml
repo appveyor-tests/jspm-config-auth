@@ -1,6 +1,4 @@
 version: 1.0.{build}
-os: Visual Studio 2015
-build: off 
 
 environment:
   JSPM_GITHUB_AUTH_TOKEN:
