@@ -13,3 +13,6 @@ install:
 #- npm install --depth 0
 - jspm config registries.github.auth %JSPM_GITHUB_AUTH_TOKEN%
 - jspm install -y
+
+build: off
+test: off
