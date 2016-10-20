@@ -5,18 +5,20 @@ environment:
     secure: S8ZjJft9L3SuErtBTUzt/dCVWTX9hQqCkzHaM/aVBOfS5y8Jb7gi2LRrwVQsVnIpk9Zm5l1JdpCvT/pJnfmv3P04+EO7EwoNZkzrXbDFVZk=
     
 install:
-- ps: Install-product node 6.2.0
+- ps: Install-product node 6.6.0
 - node --version
-- npm install jspm -g
+#- npm install jspm -g
 #- npm install --depth 0
 #- jspm config registries.github.auth %JSPM_GITHUB_AUTH_TOKEN%
+- npm install --progress=false -g jspm gulp typings grunt-cli
 
 - jspm config registries.github.remote https://github.jspm.io
 - jspm config registries.github.auth %JSPM_GITHUB_AUTH_TOKEN%
 - jspm config registries.github.maxRepoSize 0
 - jspm config registries.github.handler jspm-github
 
-- jspm install -y
+#- jspm install -y
+npm install --progress=false
 - cmd: 'curl -H "Authorization: Basic %JSPM_GITHUB_AUTH_TOKEN%" https://api.github.com/rate_limit' 
 
 build: off
