@@ -17,8 +17,8 @@ install:
 - jspm config registries.github.maxRepoSize 0
 - jspm config registries.github.handler jspm-github
 
-#- jspm install -y
-- npm install --progress=false
+- jspm install -y
+#- npm install --progress=false
 - cmd: 'curl -H "Authorization: Basic %JSPM_GITHUB_AUTH_TOKEN%" https://api.github.com/rate_limit' 
 
 build: off
