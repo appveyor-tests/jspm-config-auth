@@ -4,7 +4,7 @@ build: off
 
 environment:
   JSPM_GITHUB_AUTH_TOKEN:
-    secure: S8ZjJft9L3SuErtBTUzt/dCVWTX9hQqCkzHaM/aVBOfS5y8Jb7gi2LRrwVQsVnIpk9Zm5l1JdpCvT/pJnfmv3P04+EO7EwoNZkzrXbDFVZk=
+    secure: 64Ur2veyh/2KC6BjqgVZKlPx5cj5RgZQkw7lyeKBzyJmLb8sucaixeuKrY4psz+7
     
 install:
 #- ps: Install-product node 6.2.0
