@@ -7,7 +7,7 @@ environment:
     secure: 64Ur2veyh/2KC6BjqgVZKlPx5cj5RgZQkw7lyeKBzyJmLb8sucaixeuKrY4psz+7
     
 install:
-- ps: Install-product node 20
+- ps: Install-product node 14
 - node --version
 - npm install jspm@0.16.54 -g --depth 0
 - npm install --depth 0
